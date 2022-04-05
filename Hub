@@ -1,0 +1,967 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local MulantHub = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local Tabs = Instance.new("Frame")
+local Main = Instance.new("TextButton")
+local UICorner = Instance.new("UICorner")
+local MainTab = Instance.new("Frame")
+local AntiCheatBypass = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+local Fly = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local GToTp = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local TpTool = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local Misc = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local MiscTab = Instance.new("Frame")
+local PlayerEsp = Instance.new("TextButton")
+local UICorner_7 = Instance.new("UICorner")
+local BigHeads = Instance.new("TextButton")
+local UICorner_8 = Instance.new("UICorner")
+local ChatSpy = Instance.new("TextButton")
+local UICorner_9 = Instance.new("UICorner")
+local InfiniteCarGas = Instance.new("TextButton")
+local UICorner_10 = Instance.new("UICorner")
+local InfiniteStamina = Instance.new("TextButton")
+local UICorner_11 = Instance.new("UICorner")
+local infiniteHunger = Instance.new("TextButton")
+local UICorner_12 = Instance.new("UICorner")
+local NoCameraBob = Instance.new("TextButton")
+local UICorner_13 = Instance.new("UICorner")
+local Btools = Instance.new("TextButton")
+local UICorner_14 = Instance.new("UICorner")
+local SpamMulantHub = Instance.new("TextButton")
+local UICorner_15 = Instance.new("UICorner")
+local UICorner_16 = Instance.new("UICorner")
+local Teleport = Instance.new("TextButton")
+local UICorner_17 = Instance.new("UICorner")
+local TeleportTab = Instance.new("Frame")
+local Apt3 = Instance.new("TextButton")
+local UICorner_18 = Instance.new("UICorner")
+local BarberShop = Instance.new("TextButton")
+local UICorner_19 = Instance.new("UICorner")
+local Apt2 = Instance.new("TextButton")
+local UICorner_20 = Instance.new("UICorner")
+local HairDresser = Instance.new("TextButton")
+local UICorner_21 = Instance.new("UICorner")
+local QuizClothing = Instance.new("TextButton")
+local UICorner_22 = Instance.new("UICorner")
+local Sports = Instance.new("TextButton")
+local UICorner_23 = Instance.new("UICorner")
+local Apt1 = Instance.new("TextButton")
+local UICorner_24 = Instance.new("UICorner")
+local NewLondons = Instance.new("TextButton")
+local UICorner_25 = Instance.new("UICorner")
+local Tesbo = Instance.new("TextButton")
+local UICorner_26 = Instance.new("UICorner")
+local OtherTab = Instance.new("Frame")
+local Dupe = Instance.new("TextButton")
+local UICorner_27 = Instance.new("UICorner")
+local Other = Instance.new("TextButton")
+local UICorner_28 = Instance.new("UICorner")
+local UICorner_29 = Instance.new("UICorner")
+local TabTop = Instance.new("Frame")
+local UICorner_30 = Instance.new("UICorner")
+local TextLabel = Instance.new("TextLabel")
+local X = Instance.new("TextButton")
+
+--Properties:
+
+MulantHub.Name = "MulantHub"
+MulantHub.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+MulantHub.ResetOnSpawn = false
+MulantHub.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Frame.Parent = MulantHub
+Frame.BackgroundColor3 = Color3.fromRGB(53, 53, 53)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0.29655993, 0, 0.311084688, 0)
+Frame.Size = UDim2.new(0, 536, 0, 316)
+Frame.Active = true
+Frame.Draggable = true
+
+Tabs.Name = "Tabs"
+Tabs.Parent = Frame
+Tabs.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+Tabs.BorderColor3 = Color3.fromRGB(108, 128, 255)
+Tabs.BorderSizePixel = 5
+Tabs.Position = UDim2.new(0, 0, 0.146198809, 0)
+Tabs.Size = UDim2.new(0, 135, 0, 269)
+
+Main.Name = "Main"
+Main.Parent = Tabs
+Main.BackgroundColor3 = Color3.fromRGB(29, 146, 255)
+Main.BorderSizePixel = 0
+Main.Position = UDim2.new(0.0811385587, 0, 0.0312315337, 0)
+Main.Size = UDim2.new(0, 113, 0, 45)
+Main.Font = Enum.Font.SourceSansBold
+Main.Text = "Main"
+Main.TextColor3 = Color3.fromRGB(255, 255, 255)
+Main.TextScaled = true
+Main.TextSize = 27.000
+Main.TextWrapped = true
+
+UICorner.Parent = Main
+
+MainTab.Name = "MainTab"
+MainTab.Parent = Tabs
+MainTab.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainTab.BackgroundTransparency = 1.000
+MainTab.Position = UDim2.new(1, 0, 0.0233130474, 0)
+MainTab.Size = UDim2.new(0, 401, 0, 262)
+MainTab.Visible = false
+
+AntiCheatBypass.Name = "AntiCheatBypass"
+AntiCheatBypass.Parent = MainTab
+AntiCheatBypass.BackgroundColor3 = Color3.fromRGB(29, 146, 255)
+AntiCheatBypass.Position = UDim2.new(0.644669235, 0, 0.0352900624, 0)
+AntiCheatBypass.Size = UDim2.new(0, 104, 0, 61)
+AntiCheatBypass.Font = Enum.Font.SourceSansBold
+AntiCheatBypass.Text = "AntiCheatBypass"
+AntiCheatBypass.TextColor3 = Color3.fromRGB(255, 255, 255)
+AntiCheatBypass.TextSize = 27.000
+AntiCheatBypass.TextWrapped = true
+AntiCheatBypass.MouseButton1Down:connect(function()
+	function BypassAntiCheat()
+		game:GetService("RunService").RenderStepped:Connect(function()
+			pcall(function()
+				if game.Players.LocalPlayer.Character:FindFirstChild("Script") then
+					game.Players.LocalPlayer.Character:FindFirstChild("Script"):Destroy();
+				end
+			end) pcall(function()
+				if game.Players.LocalPlayer.Character:FindFirstChild("lolxd6") then
+					game.Players.LocalPlayer.Character:FindFirstChild("lolxd6"):Destroy();
+				end
+			end) pcall(function()
+				if game.Players.LocalPlayer.Character:FindFirstChild("lolxd555") then
+					game.Players.LocalPlayer.Character:FindFirstChild("lolxd555"):Destroy();
+				end
+			end) pcall(function()
+				if game.ReplicatedStorage:FindFirstChild("XDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD") then
+					game.ReplicatedStorage:FindFirstChild("XDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD"):Destroy();
+				end
+			end)
+		end)
+	end
+
+	BypassAntiCheat();
+
+
+	local PartCFrame = CFrame.new(-23.6783867, 40.0809975, 92.7621765, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+
+	for i,v in pairs(game.Workspace:GetChildren()) do
+		if v:IsA("Part") then
+			if v.CFrame == PartCFrame then
+				v:Destroy()
+			end
+		end
+	end
+end)
+
+UICorner_2.Parent = AntiCheatBypass
+
+Fly.Name = "Fly"
+Fly.Parent = MainTab
+Fly.BackgroundColor3 = Color3.fromRGB(29, 146, 255)
+Fly.Position = UDim2.new(0.0698472187, 0, 0.0352900624, 0)
+Fly.Size = UDim2.new(0, 104, 0, 61)
+Fly.Font = Enum.Font.SourceSansBold
+Fly.Text = "Fly"
+Fly.TextColor3 = Color3.fromRGB(255, 255, 255)
+Fly.TextScaled = true
+Fly.TextSize = 27.000
+Fly.TextWrapped = true
+Fly.MouseButton1Down:connect(function()
+	repeat wait() 
+	until game.Players.LocalPlayer and game.Players.LocalPlayer.Character and game.Players.LocalPlayer.Character:findFirstChild("Head") and game.Players.LocalPlayer.Character:findFirstChild("Humanoid") 
+	local mouse = game.Players.LocalPlayer:GetMouse() 
+	repeat wait() until mouse
+	local plr = game.Players.LocalPlayer 
+	local torso = plr.Character.Head 
+	local flying = false
+	local deb = true 
+	local ctrl = {f = 0, b = 0, l = 0, r = 0} 
+	local lastctrl = {f = 0, b = 0, l = 0, r = 0} 
+	local maxspeed = 400 
+	local speed = 5000 
+
+	function Fly() 
+		local bg = Instance.new("BodyGyro", torso) 
+		bg.P = 9e4 
+		bg.maxTorque = Vector3.new(9e9, 9e9, 9e9) 
+		bg.cframe = torso.CFrame 
+		local bv = Instance.new("BodyVelocity", torso) 
+		bv.velocity = Vector3.new(0,0.1,0) 
+		bv.maxForce = Vector3.new(9e9, 9e9, 9e9) 
+		repeat wait() 
+			plr.Character.Humanoid.PlatformStand = true 
+			if ctrl.l + ctrl.r ~= 0 or ctrl.f + ctrl.b ~= 0 then 
+				speed = speed+.5+(speed/maxspeed) 
+				if speed > maxspeed then 
+					speed = maxspeed 
+				end 
+			elseif not (ctrl.l + ctrl.r ~= 0 or ctrl.f + ctrl.b ~= 0) and speed ~= 0 then 
+				speed = speed-1 
+				if speed < 0 then 
+					speed = 0 
+				end 
+			end 
+			if (ctrl.l + ctrl.r) ~= 0 or (ctrl.f + ctrl.b) ~= 0 then 
+				bv.velocity = ((game.Workspace.CurrentCamera.CoordinateFrame.lookVector * (ctrl.f+ctrl.b)) + ((game.Workspace.CurrentCamera.CoordinateFrame * CFrame.new(ctrl.l+ctrl.r,(ctrl.f+ctrl.b)*.2,0).p) - game.Workspace.CurrentCamera.CoordinateFrame.p))*speed 
+				lastctrl = {f = ctrl.f, b = ctrl.b, l = ctrl.l, r = ctrl.r} 
+			elseif (ctrl.l + ctrl.r) == 0 and (ctrl.f + ctrl.b) == 0 and speed ~= 0 then 
+				bv.velocity = ((game.Workspace.CurrentCamera.CoordinateFrame.lookVector * (lastctrl.f+lastctrl.b)) + ((game.Workspace.CurrentCamera.CoordinateFrame * CFrame.new(lastctrl.l+lastctrl.r,(lastctrl.f+lastctrl.b)*.2,0).p) - game.Workspace.CurrentCamera.CoordinateFrame.p))*speed 
+			else 
+				bv.velocity = Vector3.new(0,0.1,0) 
+			end 
+			bg.cframe = game.Workspace.CurrentCamera.CoordinateFrame * CFrame.Angles(-math.rad((ctrl.f+ctrl.b)*50*speed/maxspeed),0,0) 
+		until not flying 
+		ctrl = {f = 0, b = 0, l = 0, r = 0} 
+		lastctrl = {f = 0, b = 0, l = 0, r = 0} 
+		speed = 0 
+		bg:Destroy() 
+		bv:Destroy() 
+		plr.Character.Humanoid.PlatformStand = false 
+	end 
+	mouse.KeyDown:connect(function(key) 
+		if key:lower() == "e" then 
+			if flying then flying = false 
+			else 
+				flying = true 
+				Fly() 
+			end 
+		elseif key:lower() == "w" then 
+			ctrl.f = 1 
+		elseif key:lower() == "s" then 
+			ctrl.b = -1 
+		elseif key:lower() == "a" then 
+			ctrl.l = -1 
+		elseif key:lower() == "d" then 
+			ctrl.r = 1 
+		end 
+	end) 
+	mouse.KeyUp:connect(function(key) 
+		if key:lower() == "w" then 
+			ctrl.f = 0 
+		elseif key:lower() == "s" then 
+			ctrl.b = 0 
+		elseif key:lower() == "a" then 
+			ctrl.l = 0 
+		elseif key:lower() == "d" then 
+			ctrl.r = 0 
+		end 
+	end)
+	Fly()
+end)
+
+UICorner_3.Parent = Fly
+
+GToTp.Name = "GToTp"
+GToTp.Parent = MainTab
+GToTp.BackgroundColor3 = Color3.fromRGB(29, 146, 255)
+GToTp.Position = UDim2.new(0.354775786, 0, 0.0324840695, 0)
+GToTp.Size = UDim2.new(0, 104, 0, 61)
+GToTp.Font = Enum.Font.SourceSansBold
+GToTp.Text = "G To Tp"
+GToTp.TextColor3 = Color3.fromRGB(255, 255, 255)
+GToTp.TextSize = 27.000
+GToTp.TextWrapped = true
+GToTp.MouseButton1Down:connect(function()
+	plr = game.Players.LocalPlayer
+
+	hum = plr.Character.HumanoidRootPart
+
+	mouse = plr:GetMouse()
+
+
+
+	mouse.KeyDown:connect(function(key)
+
+		if key == "g" then
+
+			if mouse.Target then
+
+				hum.CFrame = CFrame.new(mouse.Hit.x, mouse.Hit.y + 5, mouse.Hit.z)
+
+			end
+
+		end
+	end)
+end)
+
+UICorner_4.Parent = GToTp
+
+TpTool.Name = "TpTool"
+TpTool.Parent = MainTab
+TpTool.BackgroundColor3 = Color3.fromRGB(29, 146, 255)
+TpTool.Position = UDim2.new(0.06977579, 0, 0.313303918, 0)
+TpTool.Size = UDim2.new(0, 104, 0, 61)
+TpTool.Font = Enum.Font.SourceSansBold
+TpTool.Text = "TpTool"
+TpTool.TextColor3 = Color3.fromRGB(255, 255, 255)
+TpTool.TextSize = 27.000
+TpTool.TextWrapped = true
+TpTool.MouseButton1Down:connect(function()
+	mouse = game.Players.LocalPlayer:GetMouse()
+	tool = Instance.new("Tool")
+	tool.RequiresHandle = false
+	tool.Name = "Click Teleport"
+	tool.Activated:connect(function()
+		local pos = mouse.Hit+Vector3.new(0,2.5,0)
+		pos = CFrame.new(pos.X,pos.Y,pos.Z)
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = pos
+	end)
+	tool.Parent = game.Players.LocalPlayer.Backpack
+end)
+
+UICorner_5.Parent = TpTool
+
+Misc.Name = "Misc"
+Misc.Parent = Tabs
+Misc.BackgroundColor3 = Color3.fromRGB(29, 146, 255)
+Misc.BorderSizePixel = 0
+Misc.Position = UDim2.new(0.0811385512, 0, 0.221121535, 0)
+Misc.Size = UDim2.new(0, 113, 0, 45)
+Misc.Font = Enum.Font.SourceSansBold
+Misc.Text = "Misc"
+Misc.TextColor3 = Color3.fromRGB(255, 255, 255)
+Misc.TextScaled = true
+Misc.TextSize = 27.000
+Misc.TextWrapped = true
+
+UICorner_6.Parent = Misc
+
+MiscTab.Name = "MiscTab"
+MiscTab.Parent = Tabs
+MiscTab.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MiscTab.BackgroundTransparency = 1.000
+MiscTab.Position = UDim2.new(1.00107646, 0, 0.0318470784, 0)
+MiscTab.Size = UDim2.new(0, 400, 0, 260)
+MiscTab.Visible = false
+
+PlayerEsp.Name = "PlayerEsp"
+PlayerEsp.Parent = MiscTab
+PlayerEsp.BackgroundColor3 = Color3.fromRGB(29, 146, 255)
+PlayerEsp.Position = UDim2.new(0.0698472187, 0, 0.0352900624, 0)
+PlayerEsp.Size = UDim2.new(0, 104, 0, 61)
+PlayerEsp.Font = Enum.Font.SourceSansBold
+PlayerEsp.Text = "PlayerEsp"
+PlayerEsp.TextColor3 = Color3.fromRGB(255, 255, 255)
+PlayerEsp.TextSize = 27.000
+PlayerEsp.TextWrapped = true
+PlayerEsp.MouseButton1Down:connect(function()
+	local esp_settings = { ---- table for esp settings 
+		textsize = 8,
+		colour = 255,255,255
+	}
+
+	local gui = Instance.new("BillboardGui")
+	local esp = Instance.new("TextLabel",gui) ---- new instances to make the billboard gui and the textlabel
+
+
+
+	gui.Name = "Cracked esp"; ---- properties of the esp
+	gui.ResetOnSpawn = false
+	gui.AlwaysOnTop = true;
+	gui.LightInfluence = 0;
+	gui.Size = UDim2.new(1.75, 0, 1.75, 0);
+	esp.BackgroundColor3 = Color3.fromRGB(255, 255, 255);
+	esp.Text = ""
+	esp.Size = UDim2.new(0.0001, 0.00001, 0.0001, 0.00001);
+	esp.BorderSizePixel = 4;
+	esp.BorderColor3 = Color3.new(esp_settings.colour)
+	esp.BorderSizePixel = 0
+	esp.Font = "GothamSemibold"
+	esp.TextSize = esp_settings.textsize
+	esp.TextColor3 = Color3.fromRGB(esp_settings.colour) -- text colour
+
+	game:GetService("RunService").RenderStepped:Connect(function() ---- loops faster than a while loop :)
+		for i,v in pairs (game:GetService("Players"):GetPlayers()) do
+			if v ~= game:GetService("Players").LocalPlayer and v.Character.Head:FindFirstChild("Cracked esp")==nil  then -- craeting checks for team check, local player etc
+				esp.Text = "{"..v.Name.."}"
+				gui:Clone().Parent = v.Character.Head
+			end
+		end
+	end)
+end)
+
+UICorner_7.Parent = PlayerEsp
+
+BigHeads.Name = "Big-Heads"
+BigHeads.Parent = MiscTab
+BigHeads.BackgroundColor3 = Color3.fromRGB(29, 146, 255)
+BigHeads.Position = UDim2.new(0.644669235, 0, 0.0352900624, 0)
+BigHeads.Size = UDim2.new(0, 104, 0, 61)
+BigHeads.Font = Enum.Font.SourceSansBold
+BigHeads.Text = "Big-Heads"
+BigHeads.TextColor3 = Color3.fromRGB(255, 255, 255)
+BigHeads.TextSize = 27.000
+BigHeads.TextWrapped = true
+BigHeads.MouseButton1Down:connect(function()
+	for k,v in next, game:GetService('Players'):GetChildren() do 
+		oghead = v.Character:FindFirstChild('Head')
+		if oghead then 
+			oghead.Size = Vector3.new(2, 2, 2) 
+			game.Players.LocalPlayer.Character.Head.Size = Vector3.new(2, 1, 1)
+		end
+	end
+end)
+
+UICorner_8.Parent = BigHeads
+
+ChatSpy.Name = "ChatSpy"
+ChatSpy.Parent = MiscTab
+ChatSpy.BackgroundColor3 = Color3.fromRGB(29, 146, 255)
+ChatSpy.Position = UDim2.new(0.354775786, 0, 0.0324840695, 0)
+ChatSpy.Size = UDim2.new(0, 104, 0, 61)
+ChatSpy.Font = Enum.Font.SourceSansBold
+ChatSpy.Text = "ChatSpy"
+ChatSpy.TextColor3 = Color3.fromRGB(255, 255, 255)
+ChatSpy.TextSize = 27.000
+ChatSpy.TextWrapped = true
+ChatSpy.MouseButton1Down:connect(function()
+	enabled = true
+	--if true will check your messages too
+	spyOnMyself = true
+	--if true will chat the logs publicly (fun, risky)
+	public = false
+	--if true will use /me to stand out
+	publicItalics = true
+	--customize private logs
+	privateProperties = {
+		Color = Color3.fromRGB(0,255,255); 
+		Font = Enum.Font.SourceSansBold;
+		TextSize = 18;
+	}
+	--////////////////////////////////////////////////////////////////
+	local StarterGui = game:GetService("StarterGui")
+	local Players = game:GetService("Players")
+	local player = Players.LocalPlayer
+	local saymsg = game:GetService("ReplicatedStorage"):WaitForChild("DefaultChatSystemChatEvents"):WaitForChild("SayMessageRequest")
+	local getmsg = game:GetService("ReplicatedStorage"):WaitForChild("DefaultChatSystemChatEvents"):WaitForChild("OnMessageDoneFiltering")
+	local instance = (_G.chatSpyInstance or 0) + 1
+	_G.chatSpyInstance = instance
+
+	local function onChatted(p,msg)
+		if _G.chatSpyInstance == instance then
+			if p==player and msg:lower():sub(1,4)=="/spy" then
+				enabled = not enabled
+				wait(0.3)
+				privateProperties.Text = "{SPY "..(enabled and "EN" or "DIS").."ABLED}"
+				StarterGui:SetCore("ChatMakeSystemMessage",privateProperties)
+			elseif enabled and (spyOnMyself==true or p~=player) then
+				msg = msg:gsub("[\n\r]",''):gsub("\t",' '):gsub("[ ]+",' ')
+				local hidden = true
+				local conn = getmsg.OnClientEvent:Connect(function(packet,channel)
+					if packet.SpeakerUserId==p.UserId and packet.Message==msg:sub(#msg-#packet.Message+1) and (channel=="All" or (channel=="Team" and public==false and Players[packet.FromSpeaker].Team==player.Team)) then
+						hidden = false
+					end
+				end)
+				wait(1)
+				conn:Disconnect()
+				if hidden and enabled then
+					if public then
+						saymsg:FireServer((publicItalics and "/me " or '').."{SPY} [".. p.Name .."]: "..msg,"All")
+					else
+						privateProperties.Text = "{SPY} [".. p.Name .."]: "..msg
+						StarterGui:SetCore("ChatMakeSystemMessage",privateProperties)
+					end
+				end
+			end
+		end
+	end
+
+	for _,p in ipairs(Players:GetPlayers()) do
+		p.Chatted:Connect(function(msg) onChatted(p,msg) end)
+	end
+	Players.PlayerAdded:Connect(function(p)
+		p.Chatted:Connect(function(msg) onChatted(p,msg) end)
+	end)
+	privateProperties.Text = "{SPY "..(enabled and "EN" or "DIS").."ABLED}"
+	StarterGui:SetCore("ChatMakeSystemMessage",privateProperties)
+	local chatFrame = player.PlayerGui.Chat.Frame
+	chatFrame.ChatChannelParentFrame.Visible = true
+	chatFrame.ChatBarParentFrame.Position = chatFrame.ChatChannelParentFrame.Position+UDim2.new(UDim.new(),chatFrame.ChatChannelParentFrame.Size.Y)
+end)
+
+UICorner_9.Parent = ChatSpy
+
+InfiniteCarGas.Name = "Infinite CarGas"
+InfiniteCarGas.Parent = MiscTab
+InfiniteCarGas.BackgroundColor3 = Color3.fromRGB(29, 146, 255)
+InfiniteCarGas.Position = UDim2.new(0.0674732924, 0, 0.592526793, 0)
+InfiniteCarGas.Size = UDim2.new(0, 104, 0, 61)
+InfiniteCarGas.Font = Enum.Font.SourceSansBold
+InfiniteCarGas.Text = "Infinite CarGas"
+InfiniteCarGas.TextColor3 = Color3.fromRGB(255, 255, 255)
+InfiniteCarGas.TextSize = 27.000
+InfiniteCarGas.TextWrapped = true
+InfiniteCarGas.MouseButton1Down:connect(function()
+	while true do
+		game.Players.LocalPlayer:WaitForChild('Valuestats').CarGas.Value = 100
+		wait(0.1)
+	end
+end)
+
+UICorner_10.Parent = InfiniteCarGas
+
+InfiniteStamina.Name = "Infinite Stamina"
+InfiniteStamina.Parent = MiscTab
+InfiniteStamina.BackgroundColor3 = Color3.fromRGB(29, 146, 255)
+InfiniteStamina.Position = UDim2.new(0.354669303, 0, 0.593589544, 0)
+InfiniteStamina.Size = UDim2.new(0, 104, 0, 61)
+InfiniteStamina.Font = Enum.Font.SourceSansBold
+InfiniteStamina.Text = "Infinite Stamina"
+InfiniteStamina.TextColor3 = Color3.fromRGB(255, 255, 255)
+InfiniteStamina.TextSize = 27.000
+InfiniteStamina.TextWrapped = true
+InfiniteStamina.MouseButton1Down:connect(function()
+	while true do
+		game.Players.LocalPlayer:WaitForChild('Valuestats').Stamina.Value = 100
+		wait(0.1)
+	end
+end)
+
+UICorner_11.Parent = InfiniteStamina
+
+infiniteHunger.Name = "infinite Hunger"
+infiniteHunger.Parent = MiscTab
+infiniteHunger.BackgroundColor3 = Color3.fromRGB(29, 146, 255)
+infiniteHunger.Position = UDim2.new(0.647347212, 0, 0.308974147, 0)
+infiniteHunger.Size = UDim2.new(0, 104, 0, 61)
+infiniteHunger.Font = Enum.Font.SourceSansBold
+infiniteHunger.Text = "Infinite Hunger"
+infiniteHunger.TextColor3 = Color3.fromRGB(255, 255, 255)
+infiniteHunger.TextSize = 27.000
+infiniteHunger.TextWrapped = true
+infiniteHunger.MouseButton1Down:connect(function()
+	while true do
+		game.Players.LocalPlayer:WaitForChild('Valuestats').Hunger.Value = 100
+		wait(0.1)
+	end
+end)
+
+UICorner_12.Parent = infiniteHunger
+
+NoCameraBob.Name = "NoCameraBob"
+NoCameraBob.Parent = MiscTab
+NoCameraBob.BackgroundColor3 = Color3.fromRGB(29, 146, 255)
+NoCameraBob.Position = UDim2.new(0.06977579, 0, 0.313303918, 0)
+NoCameraBob.Size = UDim2.new(0, 104, 0, 61)
+NoCameraBob.Font = Enum.Font.SourceSansBold
+NoCameraBob.Text = "NoCameraBob"
+NoCameraBob.TextColor3 = Color3.fromRGB(255, 255, 255)
+NoCameraBob.TextSize = 27.000
+NoCameraBob.TextWrapped = true
+NoCameraBob.MouseButton1Down:connect(function()
+	game:GetService("Players").LocalPlayer.PlayerGui:FindFirstChild("Camera_Bob")
+	game.Players.LocalPlayer.PlayerGui.Camera_Bob:Destroy()
+end)
+
+UICorner_13.Parent = NoCameraBob
+
+Btools.Name = "Btools"
+Btools.Parent = MiscTab
+Btools.BackgroundColor3 = Color3.fromRGB(29, 146, 255)
+Btools.Position = UDim2.new(0.354775816, 0, 0.311561525, 0)
+Btools.Size = UDim2.new(0, 104, 0, 61)
+Btools.Font = Enum.Font.SourceSansBold
+Btools.Text = "Btools"
+Btools.TextColor3 = Color3.fromRGB(255, 255, 255)
+Btools.TextSize = 27.000
+Btools.TextWrapped = true
+Btools.MouseButton1Down:connect(function()
+	Instance.new("HopperBin", game.Players.LocalPlayer.Backpack).BinType = 4
+end)
+
+UICorner_14.Parent = Btools
+
+SpamMulantHub.Name = "SpamMulantHub"
+SpamMulantHub.Parent = MiscTab
+SpamMulantHub.BackgroundColor3 = Color3.fromRGB(29, 146, 255)
+SpamMulantHub.Position = UDim2.new(0.645295501, 0, 0.594906151, 0)
+SpamMulantHub.Size = UDim2.new(0, 104, 0, 61)
+SpamMulantHub.Font = Enum.Font.SourceSansBold
+SpamMulantHub.Text = "Spam Mulant Hub"
+SpamMulantHub.TextColor3 = Color3.fromRGB(255, 255, 255)
+SpamMulantHub.TextSize = 27.000
+SpamMulantHub.TextWrapped = true
+SpamMulantHub.MouseButton1Down:connect(function()
+	while true do wait(0) 
+
+		local A_1 = "MulantHub^" local A_2 = "All" 
+		local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2) end
+end)
+
+UICorner_15.Parent = SpamMulantHub
+
+UICorner_16.Parent = Tabs
+
+Teleport.Name = "Teleport"
+Teleport.Parent = Tabs
+Teleport.BackgroundColor3 = Color3.fromRGB(29, 146, 255)
+Teleport.BorderSizePixel = 0
+Teleport.Position = UDim2.new(0.0811385512, 0, 0.413850993, 0)
+Teleport.Size = UDim2.new(0, 113, 0, 45)
+Teleport.Font = Enum.Font.SourceSansBold
+Teleport.Text = "Teleport"
+Teleport.TextColor3 = Color3.fromRGB(255, 255, 255)
+Teleport.TextScaled = true
+Teleport.TextSize = 27.000
+Teleport.TextWrapped = true
+
+UICorner_17.Parent = Teleport
+
+TeleportTab.Name = "TeleportTab"
+TeleportTab.Parent = Tabs
+TeleportTab.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TeleportTab.BackgroundTransparency = 1.000
+TeleportTab.Position = UDim2.new(1, 0, 0.0252977107, 0)
+TeleportTab.Size = UDim2.new(0, 401, 0, 262)
+TeleportTab.Visible = false
+
+Apt3.Name = "Apt3"
+Apt3.Parent = TeleportTab
+Apt3.BackgroundColor3 = Color3.fromRGB(29, 146, 255)
+Apt3.Position = UDim2.new(0.644669235, 0, 0.0352900624, 0)
+Apt3.Size = UDim2.new(0, 104, 0, 61)
+Apt3.Font = Enum.Font.SourceSansBold
+Apt3.Text = "Apt3"
+Apt3.TextColor3 = Color3.fromRGB(255, 255, 255)
+Apt3.TextSize = 27.000
+Apt3.TextWrapped = true
+Apt3.MouseButton1Down:connect(function()
+	local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+	local location = CFrame.new(25, 4, -213)
+	local humanoid = game.Players.LocalPlayer.Character.Humanoid
+	humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+	wait(0.1)
+	pl.CFrame = location
+end)
+
+UICorner_18.Parent = Apt3
+
+BarberShop.Name = "Barber Shop"
+BarberShop.Parent = TeleportTab
+BarberShop.BackgroundColor3 = Color3.fromRGB(29, 146, 255)
+BarberShop.Position = UDim2.new(0.354775816, 0, 0.311561525, 0)
+BarberShop.Size = UDim2.new(0, 104, 0, 61)
+BarberShop.Font = Enum.Font.SourceSansBold
+BarberShop.Text = "Barber Shop"
+BarberShop.TextColor3 = Color3.fromRGB(255, 255, 255)
+BarberShop.TextSize = 27.000
+BarberShop.TextWrapped = true
+BarberShop.MouseButton1Down:connect(function()
+	local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+	local location = CFrame.new(-20, 6, 101)                                        
+	local humanoid = game.Players.LocalPlayer.Character.Humanoid
+	humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+	wait(0.1)
+	pl.CFrame = location
+end)
+
+UICorner_19.Parent = BarberShop
+
+Apt2.Name = "Apt2"
+Apt2.Parent = TeleportTab
+Apt2.BackgroundColor3 = Color3.fromRGB(29, 146, 255)
+Apt2.Position = UDim2.new(0.354775786, 0, 0.0324840695, 0)
+Apt2.Size = UDim2.new(0, 104, 0, 61)
+Apt2.Font = Enum.Font.SourceSansBold
+Apt2.Text = "Apt2"
+Apt2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Apt2.TextSize = 27.000
+Apt2.TextWrapped = true
+Apt2.MouseButton1Down:connect(function()
+	local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+	local location = CFrame.new(-206, 4, -41)
+	local humanoid = game.Players.LocalPlayer.Character.Humanoid
+	humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+	wait(0.1)
+	pl.CFrame = location
+end)
+
+UICorner_20.Parent = Apt2
+
+HairDresser.Name = "HairDresser"
+HairDresser.Parent = TeleportTab
+HairDresser.BackgroundColor3 = Color3.fromRGB(29, 146, 255)
+HairDresser.Position = UDim2.new(0.0674732924, 0, 0.592526793, 0)
+HairDresser.Size = UDim2.new(0, 104, 0, 61)
+HairDresser.Font = Enum.Font.SourceSansBold
+HairDresser.Text = "HairDresser"
+HairDresser.TextColor3 = Color3.fromRGB(255, 255, 255)
+HairDresser.TextSize = 27.000
+HairDresser.TextWrapped = true
+HairDresser.MouseButton1Down:connect(function()
+	local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+	local location = CFrame.new(-20, 6, 119)                                        
+	local humanoid = game.Players.LocalPlayer.Character.Humanoid
+	humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+	wait(0.1)
+	pl.CFrame = location
+end)
+
+UICorner_21.Parent = HairDresser
+
+QuizClothing.Name = "Quiz Clothing"
+QuizClothing.Parent = TeleportTab
+QuizClothing.BackgroundColor3 = Color3.fromRGB(29, 146, 255)
+QuizClothing.Position = UDim2.new(0.354669303, 0, 0.593589544, 0)
+QuizClothing.Size = UDim2.new(0, 104, 0, 61)
+QuizClothing.Font = Enum.Font.SourceSansBold
+QuizClothing.Text = "Quiz Clothing"
+QuizClothing.TextColor3 = Color3.fromRGB(255, 255, 255)
+QuizClothing.TextSize = 27.000
+QuizClothing.TextWrapped = true
+QuizClothing.MouseButton1Down:connect(function()
+	local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+	local location = CFrame.new(-16, 7, -51)                                        
+	local humanoid = game.Players.LocalPlayer.Character.Humanoid
+	humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+	wait(0.1)
+	pl.CFrame = location
+end)
+
+UICorner_22.Parent = QuizClothing
+
+Sports.Name = "Sports"
+Sports.Parent = TeleportTab
+Sports.BackgroundColor3 = Color3.fromRGB(29, 146, 255)
+Sports.Position = UDim2.new(0.06977579, 0, 0.313303918, 0)
+Sports.Size = UDim2.new(0, 104, 0, 61)
+Sports.Font = Enum.Font.SourceSansBold
+Sports.Text = "Sports"
+Sports.TextColor3 = Color3.fromRGB(255, 255, 255)
+Sports.TextSize = 27.000
+Sports.TextWrapped = true
+Sports.MouseButton1Down:connect(function()
+	local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+	local location = CFrame.new(-15, 7, -81)                                        
+	local humanoid = game.Players.LocalPlayer.Character.Humanoid
+	humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+	wait(0.1)
+	pl.CFrame = location
+end)
+
+UICorner_23.Parent = Sports
+
+Apt1.Name = "Apt1"
+Apt1.Parent = TeleportTab
+Apt1.BackgroundColor3 = Color3.fromRGB(29, 146, 255)
+Apt1.Position = UDim2.new(0.0698472187, 0, 0.0352900624, 0)
+Apt1.Size = UDim2.new(0, 104, 0, 61)
+Apt1.Font = Enum.Font.SourceSansBold
+Apt1.Text = "Apt1"
+Apt1.TextColor3 = Color3.fromRGB(255, 255, 255)
+Apt1.TextSize = 27.000
+Apt1.TextWrapped = true
+Apt1.MouseButton1Down:connect(function()
+	local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+	local location = CFrame.new(-99, 4, -115)
+	local humanoid = game.Players.LocalPlayer.Character.Humanoid
+	humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+	wait(0.1)
+	pl.CFrame = location
+end)
+
+UICorner_24.Parent = Apt1
+
+NewLondons.Name = "New Londons"
+NewLondons.Parent = TeleportTab
+NewLondons.BackgroundColor3 = Color3.fromRGB(29, 146, 255)
+NewLondons.Position = UDim2.new(0.645295501, 0, 0.594906151, 0)
+NewLondons.Size = UDim2.new(0, 104, 0, 61)
+NewLondons.Font = Enum.Font.SourceSansBold
+NewLondons.Text = "New Londons"
+NewLondons.TextColor3 = Color3.fromRGB(255, 255, 255)
+NewLondons.TextSize = 27.000
+NewLondons.TextWrapped = true
+NewLondons.MouseButton1Down:connect(function()
+	local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+	local location = CFrame.new(-83, 7, 9)                                        
+	local humanoid = game.Players.LocalPlayer.Character.Humanoid
+	humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+	wait(0.1)
+	pl.CFrame = location
+end)
+
+UICorner_25.Parent = NewLondons
+
+Tesbo.Name = "Tesbo"
+Tesbo.Parent = TeleportTab
+Tesbo.BackgroundColor3 = Color3.fromRGB(29, 146, 255)
+Tesbo.Position = UDim2.new(0.647347212, 0, 0.308974147, 0)
+Tesbo.Size = UDim2.new(0, 104, 0, 61)
+Tesbo.Font = Enum.Font.SourceSansBold
+Tesbo.Text = "Tesbo"
+Tesbo.TextColor3 = Color3.fromRGB(255, 255, 255)
+Tesbo.TextSize = 27.000
+Tesbo.TextWrapped = true
+Tesbo.MouseButton1Down:connect(function()
+	local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+	local location = CFrame.new(-96, 8, 58)                                        
+	local humanoid = game.Players.LocalPlayer.Character.Humanoid
+	humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+	wait(0.1)
+	pl.CFrame = location
+end)
+
+UICorner_26.Parent = Tesbo
+
+OtherTab.Name = "OtherTab"
+OtherTab.Parent = Tabs
+OtherTab.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+OtherTab.BackgroundTransparency = 1.000
+OtherTab.Position = UDim2.new(1, 0, 0.0252977107, 0)
+OtherTab.Size = UDim2.new(0, 401, 0, 262)
+OtherTab.Visible = false
+
+Dupe.Name = "Dupe"
+Dupe.Parent = OtherTab
+Dupe.BackgroundColor3 = Color3.fromRGB(29, 146, 255)
+Dupe.Position = UDim2.new(0.0698472187, 0, 0.0352900624, 0)
+Dupe.Size = UDim2.new(0, 104, 0, 61)
+Dupe.Font = Enum.Font.SourceSansBold
+Dupe.Text = "Dupe"
+Dupe.TextColor3 = Color3.fromRGB(255, 255, 255)
+Dupe.TextSize = 27.000
+Dupe.TextWrapped = true
+Dupe.MouseButton1Down:connect(function()
+	local Message = Instance.new("Message",workspace)
+	Message.Text = ("Loading Crash Script")
+	Message.Text = ("Loading Crash Script.")
+	Message.Text = ("Loading Crash Script..")
+	Message.Text = ("Loading Crash Script...")
+	Message.Text = ("Sucessfully Loaded")
+	Message.Text = ("HAHAHAHAHAHHAHAHAAHHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAAHAHAHAHAHAHAHAHAH")
+	Message.Text = ("HAHAHAHAHAHHAHAHAAHHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAAHAHAHAHAHAHAHAHAH")
+	Message.Text = ("HAHAHAHAHAHHAHAHAAHHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAAHAHAHAHAHAHAHAHAH")
+	repeat
+		NeverStop = 1
+		Message.Text = ("HAHAHAHAHAHHAHAHAAHHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAAHAHAHAHAHAHAHAHAH")
+		local HAHAHAHAHAHHAHAHAAHHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAAHAHAHAHAHAHAHAHAH = Instance.new("Part",workspace)
+		Message.Text = ("HAHAHAHAHAHHAHAHAAHHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAAHAHAHAHAHAHAHAHAH")
+	until
+	NeverStop == 3
+end)
+
+UICorner_27.Parent = Dupe
+
+Other.Name = "Other"
+Other.Parent = Tabs
+Other.BackgroundColor3 = Color3.fromRGB(29, 146, 255)
+Other.BorderSizePixel = 0
+Other.Position = UDim2.new(0.0811385512, 0, 0.618311942, 0)
+Other.Size = UDim2.new(0, 113, 0, 45)
+Other.Font = Enum.Font.SourceSansBold
+Other.Text = "Other"
+Other.TextColor3 = Color3.fromRGB(255, 255, 255)
+Other.TextScaled = true
+Other.TextSize = 27.000
+Other.TextWrapped = true
+
+UICorner_28.Parent = Other
+
+UICorner_29.Parent = Frame
+
+TabTop.Name = "TabTop"
+TabTop.Parent = Frame
+TabTop.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+TabTop.BorderColor3 = Color3.fromRGB(108, 128, 255)
+TabTop.BorderSizePixel = 5
+TabTop.Position = UDim2.new(0, 0, -0.00150376558, 0)
+TabTop.Size = UDim2.new(0, 536, 0, 51)
+
+UICorner_30.Parent = TabTop
+
+TextLabel.Parent = TabTop
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(-0.277985066, 0, 0.0941240415, 0)
+TextLabel.Size = UDim2.new(0, 512, 0, 41)
+TextLabel.Font = Enum.Font.SourceSansBold
+TextLabel.Text = "MULANT HUB"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+X.Name = "X"
+X.Parent = Frame
+X.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+X.BackgroundTransparency = 1.000
+X.Position = UDim2.new(0.87126869, 0, -0.0194997042, 0)
+X.Size = UDim2.new(0, 77, 0, 61)
+X.Font = Enum.Font.SourceSansBold
+X.Text = "X"
+X.TextColor3 = Color3.fromRGB(255, 255, 255)
+X.TextScaled = true
+X.TextSize = 14.000
+X.TextWrapped = true
+
+-- Scripts:
+
+local function POXU_fake_script() -- Main.LocalScript 
+	local script = Instance.new('LocalScript', Main)
+
+	script.Parent.MouseButton1Down:connect(function()
+		script.Parent.Parent.MainTab.Visible = true
+		script.Parent.Parent.MiscTab.Visible = false
+		script.Parent.Parent.TeleportTab.Visible = false
+		script.Parent.Parent.OtherTab.Visible = false
+	end)
+	
+end
+coroutine.wrap(POXU_fake_script)()
+local function EHDUGYI_fake_script() -- Misc.LocalScript 
+	local script = Instance.new('LocalScript', Misc)
+
+	script.Parent.MouseButton1Down:connect(function()
+		script.Parent.Parent.MainTab.Visible = false
+		script.Parent.Parent.MiscTab.Visible = true
+		script.Parent.Parent.TeleportTab.Visible = false
+		script.Parent.Parent.OtherTab.Visible = false
+	end)
+	
+end
+coroutine.wrap(EHDUGYI_fake_script)()
+local function CDYMKYN_fake_script() -- Teleport.LocalScript 
+	local script = Instance.new('LocalScript', Teleport)
+
+	script.Parent.MouseButton1Down:connect(function()
+		script.Parent.Parent.MainTab.Visible = false
+		script.Parent.Parent.MiscTab.Visible = false
+		script.Parent.Parent.TeleportTab.Visible = true
+		script.Parent.Parent.OtherTab.Visible = false
+	end)
+	
+end
+coroutine.wrap(CDYMKYN_fake_script)()
+local function OVNUP_fake_script() -- Other.LocalScript 
+	local script = Instance.new('LocalScript', Other)
+
+	script.Parent.MouseButton1Down:connect(function()
+		script.Parent.Parent.MainTab.Visible = false
+		script.Parent.Parent.MiscTab.Visible = false
+		script.Parent.Parent.TeleportTab.Visible = false
+		script.Parent.Parent.OtherTab.Visible = true
+	end)
+	
+end
+coroutine.wrap(OVNUP_fake_script)()
+local function FYZFPDS_fake_script() -- X.CloseFrameScript 
+	local script = Instance.new('LocalScript', X)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Visible = false
+	end)
+	
+end
+coroutine.wrap(FYZFPDS_fake_script)()
